@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for MBBS abroad in top countries. Get expert guidance and hassle-free admission.">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black-100">
+    
+    <!-- Hero Section -->
+    <header class="bg-gray-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-2">Start your journey to becoming a doctor today!</p>
+        <button class="mt-4 bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold">Apply Now</button>
+    </header>
+    
+    <!-- Why Study MBBS Abroad -->
+    <section class="max-w-4xl mx-auto py-10 px-4">
+        <h2 class="text-2xl font-semibold text-center mb-4">Why Study MBBS Abroad?</h2>
+        <ul class="list-disc pl-5">
+            <li>Affordable tuition fees</li>
+            <li>Globally recognized degrees</li>
+            <li>Quality education with modern facilities</li>
+            <li>International exposure</li>
+        </ul>
+    </section>
+    
+    <!-- Top Countries -->
+    <section class="bg-white py-10">
+        <h2 class="text-2xl font-semibold text-center">Top Countries</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mt-6 px-4">
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Russia</div>
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Uzbekistan</div>
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Kazakhstan</div>
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Philippines</div>
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Georgia</div>
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Kyrgyzstan</div>
+            <div class="bg-blue-500 text-white p-4 text-center rounded-lg">Egypt</div>
+        </div>
+    </section>
+    
+    <!-- Admission Process & Eligibility -->
+    <section class="max-w-4xl mx-auto py-10 px-4">
+        <h2 class="text-2xl font-semibold text-center mb-4">Admission Process & Eligibility</h2>
+        <ol class="list-decimal pl-5">
+            <li>Check eligibility criteria</li>
+            <li>Choose your preferred university</li>
+            <li>Submit the application</li>
+            <li>Receive admission letter</li>
+            <li>Apply for a student visa</li>
+            <li>Travel and begin studies</li>
+        </ol>
+    </section>
+    
+    <!-- Lead Generation Form -->
+    <section class="bg-gray-200 py-10">
+        <h2 class="text-2xl font-semibold text-center mb-4">Apply Now</h2>
+        <form id="lead-form" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <label class="block mb-2">Name:</label>
+            <input type="text" id="name" class="w-full p-2 border rounded mb-4" required>
+            
+            <label class="block mb-2">Email:</label>
+            <input type="email" id="email" class="w-full p-2 border rounded mb-4" required>
+            
+            <label class="block mb-2">Phone:</label>
+            <input type="tel" id="phone" class="w-full p-2 border rounded mb-4" required>
+            
+            <label class="block mb-2">Country Preference:</label>
+            <select id="country" class="w-full p-2 border rounded mb-4">
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Egypt">Egypt</option>
+                <option value="India">India</option>
+            </select>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <!-- JavaScript for Form Validation -->
+    <script>
+        document.getElementById('lead-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            if (!name || !email || !phone) {
+                alert('Please fill all required fields.');
+                return;
+            }
+            
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+</html>
+
